@@ -217,6 +217,100 @@ body {
   margin-bottom: 0;
 }
 
+
+
+
+
+
+
+/*产品推荐*/
+
+#products {
+  background-color: #f0f0f0;
+  padding: 40px 0;
+}
+
+#products > .container >  .nav-tabs {
+  padding-left:20px;
+}
+
+#products > .container > .nav-tabs > li > a {
+	font-size:16px;
+	color:#333;
+}
+	
+
+#products > .container > .nav-tabs > li > a:hover {
+	border-color:transparent;
+	background-color:transparent;
+	color:#000;
+}
+
+#products > .container > .nav-tabs > li.active {}
+
+#products > .container > .nav-tabs > li.active > a {
+	background-color:transparent;
+	border:0;
+	border-bottom: 4px solid #e92322;
+}
+
+#products > .container > .tab-content {
+  padding:20px;
+}
+
+#products > .container > .tab-content p {
+  margin-bottom: 0;
+}
+
+
+#products > .container > .tab-content .panel-weijinsuo-products.active  {
+  background-color: #e92322;
+  color: white;
+}
+
+
+
+#products > .container > .tab-content .panel-weijinsuo-products.disable {
+  background-color: #e0e0e0;
+  box-shadow: none;
+}
+
+.panel-weijinsuo-products > .panel-heading::before, .panel-weijinsuo-products > .panel-heading::after {
+  content: '';
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  position: absolute;
+  
+}
+
+.panel-weijinsuo-products > .panel-heading::before {
+  top: -8px;
+  left: -8px;
+}
+
+.panel-weijinsuo-products > .panel-heading::after {
+  left: -8px;
+  bottom: -8px;
+  box-shadow: inset 0px 4px 2px;
+} 
+
+.panel-weijinsuo-products.disable > .panel-heading::after {
+  box-shadow: none;
+}
+
+.panel-weijinsuo-products.active::before {
+    content: "\e915";
+    font-family: itcast;
+    font-size: 50px;
+    position: absolute;
+    top: -12px;
+    left: 14px;
+}
+
+
+
 /*
 
 测试样式区域
@@ -235,6 +329,39 @@ body {
 footer {
 
 }
+
+
+
+
+
+/* 
+Bootstrap 扩展   BBG网站自定义面板样式
+*/
+
+
+.panel-weijinsuo-products {
+  border:0px;
+  border-radius:0px;
+  box-shadow: 1px 1px 3px; 
+}
+.panel-weijinsuo-products > .panel-heading {
+  color: #333;
+  float: right;
+  width: 120px;
+  height: 150px;
+  padding: 0;
+  border-left: 1px dashed #ccc;
+  text-align: center;
+  position: relative;
+}
+
+.panel-weijinsuo-products > .panel-body {
+  margin-right: 120px;
+  height: 150px;
+}
+
+
+
 
 
 /* 
