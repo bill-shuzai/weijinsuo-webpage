@@ -55,4 +55,31 @@ $(function(){
 		$news_title.text(title);
 	});
 
+	/*轮播图滑动控制*/
+	var $carousels = $('.carousel');
+	var startPosition=0;
+	var endPosition=0;
+	var offset=50;
+
+	/*获取触摸开始位置和触摸结束位置*/
+	$carousels.on('touchstart',function(e){
+		startPosition=e.originalEvent.changedTouches[0].clientX;
+	});
+
+	$carousels.on('touchmove',function(e){
+		endPosition=e.originalEvent.changedTouches[0].clientX;
+		
+	});
+
+	/*触摸结束后判断应该是滑向上一页还是下一页*/
+	/*应该有个范围值*/
+
+	$carousels.on('touchend',function(){
+		var distance=Math.abs(startPosition-endPosition);
+		console.log(startPosition>endPosition);
+		if (distance>offset) {
+			$(this).carousel(startPosition>endPosition? 'next' : 'prev');
+		}
+	});
+
 });

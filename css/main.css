@@ -564,6 +564,8 @@ fieldset[disabled] .btn-register.active {
   background-color: #fff;
   border-color: #f5f5f5;
   margin-bottom:0;
+  top: 0;
+  width: 100%;
 }
 .navbar-itcast .navbar-brand {
   height: 80px;

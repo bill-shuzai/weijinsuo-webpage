@@ -43,3 +43,10 @@
 - 有用到center block样式
 - 要复盘字体图标的使用方法
 
+
+12月7号
+
+- 使用模态框 表单 
+- 实现吸顶效果 自适应功能栏横向滚动功能（给外容器设置宽度属性，宽度随内容的变化而变化）
+- 轮播图左右滑动切换上下页 使用事件 touchevent,touchmove,touchend
+- 获取触摸位置 e.originalEvent.touches[0].clientX;
